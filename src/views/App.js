@@ -12,15 +12,15 @@ import {
 
 
 import 'react-toastify/dist/ReactToastify.css';
-import Nav from './Nav/nav';
+import Nav from './Nav/NavBar/Navbar';
 import Home from './Example/Home';
 import ListUser from './Users/ListUsers';
 import Categories from './Categories/Categories';
 import DetailCategory from './Categories/DetailCategory';
-import Tours from './Tours/Tours'
-import TourDetail from './Tours/TourDetail'
-import HookJS from './Example/Hook'
-
+import Tours from './Tours/Tours';
+import TourDetail from './Tours/TourDetail';
+import HookJS from './Example/Hook';
+import SignUp from './Auth/Signup';
 
 function App() {
   return (
@@ -64,6 +64,12 @@ function App() {
             <Route path="/hooks" exact>
               <HookJS />
             </Route>
+
+            <Route path="/sign-up" exact>
+              <SignUp />
+            </Route>
+
+
           </Switch>
 
         </header>
